@@ -1,0 +1,150 @@
+
+main{
+   padding-top: 6rem;
+}
+form {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.container-descuentos__card{
+   display: flex;
+   justify-content: center;
+   gap: .5rem;
+   margin:1rem;
+}
+
+.card__descuentos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   padding: 1.5rem;
+}
+
+.card__descuentos p,h3{
+   color: rgba(10, 10, 10, 0.726);
+   font-family: sans-serif;
+}
+
+.card__descuentos h5{
+   color: rgba(46, 45, 45, 0.555);
+   font-family: sans-serif;
+}
+.blue-border{
+   border: 1px solid #1C87FB;
+}
+.light-blue-border{
+   border: 1px solid #49B1C2;
+}
+.yellow-border{
+   border: 1px solid rgb(255,213,88);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+   gap: 0.5rem;
+}
+
+
+
+.formulario__cantidad-categoria{
+   display: flex;
+   gap: 0.5rem;
+
+}
+.cantidad-categoria{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.formulario__body{
+   width: 100%;
+   max-width: 668.5px;
+}
+
+.cantidad-categoria select{
+   border: 0.2px solid hsla(210, 11%, 15%, 0.5);
+   padding: 0.6369rem 4rem 0.6369rem 1rem;
+}
+
+
+.formulario__nombre-apellido input,
+.cantidad-categoria input,
+#correo{
+   border: 0.2px solid hsla(210, 11%, 15%, 0.5);
+   padding: 0.7rem 4rem 0.7rem 1rem;
+}
+.formulario__nombre-apellido,
+.formulario__cantidad-categoria{
+   justify-content: space-between;
+   gap: 0rem;
+}
+
+
+
+.total-pagar-container{
+   display: flex;
+   gap: 0.2rem;
+   padding: 0.8rem;
+   background-color: rgba(57, 116, 194, 0.342);
+   font-size: 4rem;
+   border-radius: 5px;
+}
+
+.total-pagar-container p{
+   font-size: 1rem;
+   color: rgba(0, 0, 0, 0.719);
+}
+
+.botones-borrar-resumen{
+   display: flex;
+   gap: 0.5rem;
+}
+
+.botones-borrar-resumen button{
+   width: 50%;
+   cursor: pointer;
+   margin: 0;
+   text-decoration: none;
+   border: 0;
+   background-color: #96C93E;
+   color: white;
+   padding: 0.5rem;
+   border-radius: 5px;
+   transition: 300ms ease-in;
+}
+
+.botones-borrar-resumen button:hover{
+   background-color: #489543;
+}
+
+#nombre,
+#apellido,
+.cantidad-categoria{
+   width: 49%;
+}
+
+
+
+@media (max-width: 670px) {
+   .container-descuentos__card{
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+      margin: 1.5rem;
+   }
+   .card__descuentos{
+      width: 80%;
+   }
+   .formulario__body{
+      width: 90%;
+   }
+   .cantidad-categoria select{
+      padding-right: 4rem;
+   }
+}
+
